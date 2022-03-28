@@ -155,7 +155,7 @@
                           },
                           "then_run": {
                             "result_state": {
-                              "Name": "minecraft:coarse_dirt"
+                              "Name": "minecraft:stone"
                             },
                             "type": "minecraft:block"
                           },
@@ -170,7 +170,7 @@
                           },
                           "then_run": {
                             "result_state": {
-                              "Name": "minecraft:coarse_dirt"
+                              "Name": "minecraft:stone"
                             },
                             "type": "minecraft:block"
                           },
@@ -185,7 +185,7 @@
                           },
                           "then_run": {
                             "result_state": {
-                              "Name": "minecraft:coarse_dirt"
+                              "Name": "minecraft:stone"
                             },
                             "type": "minecraft:block"
                           },
@@ -205,7 +205,7 @@
                                   "Properties": {
                                     "snowy": "false"
                                   },
-                                  "Name": "minecraft:grass_block"
+                                  "Name": "minecraft:stone"
                                 },
                                 "type": "minecraft:block"
                               },
@@ -213,7 +213,7 @@
                             },
                             {
                               "result_state": {
-                                "Name": "minecraft:dirt"
+                                "Name": "minecraft:stone"
                               },
                               "type": "minecraft:block"
                             }
@@ -1112,7 +1112,7 @@
                               },
                               "then_run": {
                                 "result_state": {
-                                  "Name": "minecraft:coarse_dirt"
+                                  "Name": "minecraft:stone"
                                 },
                                 "type": "minecraft:block"
                               },
@@ -1204,7 +1204,7 @@
                                         "Properties": {
                                           "snowy": "false"
                                         },
-                                        "Name": "minecraft:grass_block"
+                                        "Name": "minecraft:stone"
                                       },
                                       "type": "minecraft:block"
                                     },
@@ -1212,7 +1212,7 @@
                                   },
                                   {
                                     "result_state": {
-                                      "Name": "minecraft:dirt"
+                                      "Name": "minecraft:stone"
                                     },
                                     "type": "minecraft:block"
                                   }
@@ -1272,7 +1272,7 @@
                               },
                               "then_run": {
                                 "result_state": {
-                                  "Name": "minecraft:coarse_dirt"
+                                  "Name": "minecraft:stone"
                                 },
                                 "type": "minecraft:block"
                               },
@@ -1337,7 +1337,7 @@
                             "Properties": {
                               "snowy": "false"
                             },
-                            "Name": "minecraft:mycelium"
+                            "Name": "minecraft:stone"
                           },
                           "type": "minecraft:block"
                         },
@@ -1357,7 +1357,7 @@
                                 "Properties": {
                                   "snowy": "false"
                                 },
-                                "Name": "minecraft:grass_block"
+                                "Name": "minecraft:stone"
                               },
                               "type": "minecraft:block"
                             },
@@ -1365,7 +1365,7 @@
                           },
                           {
                             "result_state": {
-                              "Name": "minecraft:dirt"
+                              "Name": "minecraft:stone"
                             },
                             "type": "minecraft:block"
                           }
@@ -1622,7 +1622,7 @@
                             },
                             {
                               "result_state": {
-                                "Name": "minecraft:dirt"
+                                "Name": "minecraft:stone"
                               },
                               "type": "minecraft:block"
                             }
@@ -1933,7 +1933,7 @@
                               },
                               "then_run": {
                                 "result_state": {
-                                  "Name": "minecraft:dirt"
+                                  "Name": "minecraft:stone"
                                 },
                                 "type": "minecraft:block"
                               },
@@ -1973,7 +1973,7 @@
                       },
                       {
                         "result_state": {
-                          "Name": "minecraft:dirt"
+                          "Name": "minecraft:stone"
                         },
                         "type": "minecraft:block"
                       }
