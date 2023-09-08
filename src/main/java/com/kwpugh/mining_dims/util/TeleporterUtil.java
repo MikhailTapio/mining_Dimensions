@@ -1,6 +1,5 @@
 package com.kwpugh.mining_dims.util;
 
-import com.kwpugh.mining_dims.init.EnchantmentInit;
 import com.kwpugh.mining_dims.init.MiningDimsRegistry;
 import net.fabricmc.fabric.api.dimension.v1.FabricDimensions;
 import net.minecraft.block.Blocks;
@@ -41,32 +40,6 @@ public class TeleporterUtil
 
         // Only run on server side
         if(world.isClient) return TypedActionResult.success(stack);
-
-        // If teleporter is enchanted, check for Returning and return to Overworld bed if so
-        if(player.isSneaking() && (EnchantmentHelper.getLevel(EnchantmentInit.RETURNING, player.getEquippedStack(EquipmentSlot.MAINHAND)) > 0))
-        {
-            ServerWorld serverWorld = ((ServerWorld)world).getServer().getWorld(World.OVERWORLD);
-            ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
-
-            if(serverPlayer.getSpawnPointPosition() != null) //player bed location not null
-            {
-                BlockPos bedLoc = serverPlayer.getSpawnPointPosition(); //get player bed position
-                serverPlayer.stopRiding();
-
-                serverPlayer.teleport(serverWorld, bedLoc.getX() + 0.5F, bedLoc.getY(), bedLoc.getZ() + 0.5F, serverPlayer.getYaw(), serverPlayer.getPitch());
-                world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_CHORUS_FRUIT_TELEPORT, SoundCategory.PLAYERS, 1.0F, 1.0F);
-
-                player.sendMessage((new TranslatableText("item.mining_dims.teleporter4")), true);   //Welcome Home!
-
-                TypedActionResult.success(stack1);
-            }
-            else
-            {
-                player.sendMessage((new TranslatableText("item.mining_dims.teleporter5")), true);  //Set a bed spawn first!
-
-                TypedActionResult.success(stack);
-            }
-        }
 
         // Logic to either send to dim of teleporter in hand or back to Overworld, depending on current location
         if(!player.isSneaking())
