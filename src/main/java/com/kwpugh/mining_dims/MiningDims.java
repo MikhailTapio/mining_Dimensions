@@ -34,7 +34,6 @@ public class MiningDims implements ModInitializer
         ItemInit.init();
         PortalInit.registerPortal();
         MiningDimsRegistry.setupDimension();
-        EnchantmentInit.registerEnchantments();
         MiningDimsOreConfiguredFeature.init();
         MiningDimsOrePlacedFeature.init();
     }	
