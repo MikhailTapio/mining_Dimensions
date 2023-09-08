@@ -31,6 +31,9 @@ repositories {
 		url = "http://maven.kyrptonaught.dev"
 		allowInsecureProtocol = true
 	}
+	flatDir {
+        	dir 'libs'
+    	}
 }
 
 dependencies {
@@ -57,8 +60,8 @@ dependencies {
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.roughlyenoughitems}"
 
 	//Pughlib for common mixin
-	include "com.kwpugh:pugh_lib_fabric_1.18.2:${project.pugh_lib}"
-	modImplementation "com.kwpugh:pugh_lib_fabric_1.18.2:${project.pugh_lib}"
+	include "pughlib:pughlib:1.0.0"
+	modImplementation "pughlib:pughlib:1.0.0"
 }
 
 processResources {
