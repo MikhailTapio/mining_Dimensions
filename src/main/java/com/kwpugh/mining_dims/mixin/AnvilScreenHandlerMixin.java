@@ -1,6 +1,5 @@
 package com.kwpugh.mining_dims.mixin;
 
-import com.kwpugh.mining_dims.util.TeleporterAnvilAction;
 import net.minecraft.entity.player.PlayerEntity;
 
 import net.minecraft.item.Items;
@@ -31,13 +30,5 @@ public class AnvilScreenHandlerMixin
             cir.setReturnValue(levelCost.get() <= player.experienceLevel);
             cir.cancel();
         }
-    }
-
-    @Inject(method = "updateResult", at = @At("HEAD"), cancellable = true)
-    public void miningdimsUpdateResult(CallbackInfo ci)
-    {
-        ForgingScreenHandlerAccessor accessor = (ForgingScreenHandlerAccessor) this;
-
-        TeleporterAnvilAction.anvilAction(accessor, levelCost,  newItemName, ci);
     }
 }
